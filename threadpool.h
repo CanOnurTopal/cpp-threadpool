@@ -18,6 +18,7 @@ namespace TP {
 
 
             bool set_thread_count(std::size_t count);
+            size_t get_thread_count();
 
             template<typename Callable, typename... Args>
             std::future<typename Utilities::p_invoke_result_t<Callable, Args...>> submit(Callable, Args...);
