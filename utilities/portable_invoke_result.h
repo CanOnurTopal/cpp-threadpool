@@ -2,6 +2,11 @@
 #define PORTABLE_INVOKE_RESULT_H
 #include <type_traits>
 
+/*
+the STD function result_of() is depreciated in later versions of cpp and replaced with invoke_result().
+This workaround is used to avoid introducing any version dependancies.
+*/
+
 namespace TP {
     namespace Utilities {
         template<typename Callable, typename... Args>
