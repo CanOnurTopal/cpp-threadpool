@@ -30,7 +30,7 @@ namespace TP {
                     }
                 }
             }
-            catch(...) // TODO Implement a better exception catching system
+            catch(...) // TODO Implement a more granular exception handler
             {
                 auto expPtr = std::current_exception();
                 std::cout << "exception" << std::endl;;
